@@ -1,0 +1,29 @@
+$page_width:100%;
+$box_width:1200px;
+.ad{
+    height: 90px;
+    width: $page_width;
+}
+.ad a{
+    background: url(http://img10.jiuxian.com/bill/2020/1210/852f68135f284722b82f963e7155d043.jpg) no-repeat;
+}
+.header{
+    width: $page_width;
+    height: 125px;
+}
+.top_mid{
+    width: $box_width;
+    margin: 0 auto;
+}
+.logo{
+    width: 257px;
+    margin: 0 auto;
+
+}
+.search{
+    width: 540px;
+}
+.protect{
+    width: 363px;
+    height: 300px;
+}

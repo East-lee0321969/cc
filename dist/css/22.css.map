@@ -1,0 +1,1 @@
+{"version":3,"file":"22.css","sources":["22.scss"],"sourcesContent":["$w:200px;\n.box{\n    width: $w;\n}"],"names":[],"mappings":"AACA,AAAA,IAAI,AAAA,CACA,KAAK,CAFN,KAAK,CAGP"}
