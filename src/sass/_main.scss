@@ -1,0 +1,240 @@
+$page_width:100%;
+$box_width:1200px;
+.main{
+    width: $page_width;
+    position: relative;
+    margin-top: 10px;
+    height: 940px;
+    .main_left{
+        display: block;
+        position: absolute;
+        left: -380px;
+        overflow: hidden;
+    }
+    .main_right{
+        width: 120px;
+        display: block;
+        position: absolute;
+        right: 201px;
+        overflow: hidden;
+    }
+    .main_center{
+        width: $box_width;
+        margin: 0 auto;
+        position: absolute;
+        left: 120px;
+        ul{
+            width: $page_width;
+            .nav_li{
+                width: 183px;
+                border: 1px solid #ddd;
+                text-align: center;
+                line-height: 38px;
+                float: left;
+                background-color: #f7f7f7;
+                color: #666;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.tab_box{
+    width: 925px;
+    margin-bottom: 10px;
+}
+.tab_list{
+    border: 1px solid #f7f7f7;
+    ul{
+        width: 910px;
+        li{
+            width: 184px;
+            color: #999;
+            font-size: 12px;
+            float: left;
+    
+        }
+    }
+    .list_p{
+        color: red;
+    }
+}
+.not_list{
+    width: 270px;
+    border: 1px solid #ddd;
+    li{
+        width: 133px;
+        border: 1px solid #ddd;
+        text-align: center;
+        line-height: 38px;
+        float: left;
+        background-color: #f7f7f7;
+        color: #666;
+        cursor: pointer;
+    }
+    p{
+        padding-left: 10px;
+        line-height: 28px;
+        span{
+            font-size: 12px;
+            color: #666;
+            margin-left: 10px;
+        }
+    }
+}
+.not_pic{
+    cursor: pointer;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    overflow: hidden;
+}
+.main_bottom{
+    width: $box_width;
+    margin: 0 auto;
+    margin-top: 20px;
+    a{
+        margin-left: 20px;
+        padding: 20px 0 0 90px;
+        display: block;
+        float: left;
+        background-color: #f7f7f7;
+    }
+}
+.new_icon{
+    width: $box_width;
+    h3{
+        height: 40px;
+        line-height: 40px;
+        font-weight: normal;
+        padding-left: 15px;
+    }
+    ul{
+        border: 1px solid #ddd;
+        li{
+            float: left;
+            width: 198px;
+            height: 257px;
+            font-size: 12px;
+            p{
+                color: #666;
+            }
+            strong{
+                color: red;
+            }
+        }
+    }
+}
+.loutinav{
+    width: 30px;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    border: 1px solid red;
+    z-index: 99;
+    a{
+        display: block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 20px;
+        color: orange;
+    }
+}
+.whitej{
+    width: $box_width;
+    margin: 0 auto;
+    padding-top: 12px;
+    .title{
+        line-height: 40px;
+    }
+}
+.title_left {
+    font-size: 18px;
+    span{
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    background-color: red;
+    margin-right: 10px;
+    color: #fff;
+}
+}
+.title_right span{
+    margin: 0 5px;
+    font-size: 12px;
+    color: #999;
+}
+.title_right a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.white_right ul{
+    width: 988px;
+    height: 486px;
+    border: 1px solid #ddd;
+    li{
+        width: 20%;
+        float: left;
+        p{
+            font-size: 12px;
+        }
+        span{
+            color: red;
+        }
+    }
+}
+.hot_box{
+    width: 186px;
+    height: 131px;
+    padding: 20px 10px 10px 14px;
+    background-color: #f9f9f9;
+}
+.hot_title{
+    line-height: 40px;
+    span{
+        font-size: 12px;
+        color: #999;
+    }
+    a:hover{
+        color: red;
+        text-decoration: underline;
+        
+    }
+}
+.hot_left span{
+    color: red;
+}
+.hot_box h3{
+    height: 30px;
+    line-height: 30px;
+    color: red;
+}
+.hot_box p{
+    height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    a{
+        margin-right: 25px;
+    }
+}
+.hot_main{
+    width: $page_width;
+    li{
+        float: left;
+        width: 197px;
+        margin-top: 20px;
+    }
+}
+.hot_deg{
+    width: 80px;
+    font-size: 12px;
+    p{
+        color: #999;
+    }
+    span{
+        color: red;
+    }
+}

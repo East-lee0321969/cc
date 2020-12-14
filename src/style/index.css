@@ -1,3 +1,469 @@
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline}body{line-height:1;color:black;background:white}ol,ul{list-style:none}table{border-collapse:separate;border-spacing:0}caption,th,td{text-align:left;font-weight:normal}.ad{height:90px;width:100%}.ad a{background:url(http://img10.jiuxian.com/bill/2020/1210/852f68135f284722b82f963e7155d043.jpg) no-repeat}.header{width:100%;height:125px}.top_mid{width:1200px;margin:0 auto}.logo{width:257px;margin:0 auto}.search{width:540px}.protect{width:363px;height:300px}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+ol, ul {
+  list-style: none; }
+
+img {
+  vertical-align: middle; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #999; }
+
+.clr_fix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  overflow: hidden;
+  visibility: hidden; }
+
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
+
+.top_head {
+  width: 100%;
+  height: 27px;
+  background-color: #f2f2f2; }
+  .top_head .top_headmid {
+    width: 1200px;
+    margin: 0 auto;
+    height: 27px;
+    line-height: 27px; }
+    .top_head .top_headmid .top_left {
+      width: 370px;
+      height: 100%; }
+    .top_head .top_headmid .top_right {
+      width: 785px;
+      height: 100%;
+      border: 1px solid red; }
+
+.top_left span {
+  font-size: 12px;
+  color: #999; }
+
+.top_right li {
+  float: left;
+  margin: 0 5px; }
+
+.ad {
+  height: 90px;
+  width: 100%; }
+  .ad a {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: url(http://img10.jiuxian.com/bill/2020/1210/852f68135f284722b82f963e7155d043.jpg) no-repeat top center scroll; }
+
+.top_mid {
+  width: 1200px;
+  margin: 35px auto 35px;
+  border: 1px solid red; }
+
+.logo {
+  width: 257px;
+  padding: 4px 3px 0;
+  margin: 0 auto; }
+
+.logo a {
+  display: block;
+  float: left;
+  margin-right: 3px; }
+
+.search .s_form {
+  margin-top: 5px;
+  border: 1px solid #CC0000; }
+  .search .s_form .sear_input {
+    width: 450px;
+    height: 33px;
+    outline: none;
+    border: 2px solid #CC0000; }
+  .search .s_form .btn {
+    width: 85px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    color: #fff;
+    border: 2px solid #CC0000;
+    background-color: #CC0000; }
+
+.search li {
+  float: left; }
+  .search li a:hover {
+    color: #CC0000;
+    text-decoration: underline; }
+  .search li s {
+    font-size: 12px;
+    color: #999;
+    margin: 0 6px; }
+
+.protect {
+  width: 363px; }
+
+.t_nav {
+  width: 100%;
+  height: 34px;
+  background-color: #990000; }
+  .t_nav .nav {
+    width: 1200px;
+    height: 34px;
+    margin: 0 auto; }
+    .t_nav .nav .nav_all {
+      display: block;
+      float: left;
+      width: 190px;
+      height: 34px;
+      font-size: 14px;
+      line-height: 34px;
+      color: #fff;
+      text-align: center; }
+    .t_nav .nav a:hover {
+      background-color: #b40c10; }
+
+.nav_list {
+  width: 890px;
+  height: 34px; }
+  .nav_list li {
+    float: left;
+    line-height: 33px;
+    padding: 0 17px;
+    text-align: center; }
+    .nav_list li a {
+      font-size: 14px;
+      color: #fff; }
+  .nav_list li:hover {
+    background-color: #b40c10; }
+
+.banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  z-index: 2; }
+  .banner ul {
+    position: relative;
+    width: 1200px;
+    height: 470px;
+    margin: 0 auto; }
+    .banner ul li {
+      display: none; }
+    .banner ul img {
+      position: absolute;
+      left: 50%;
+      margin-left: -950px; }
+  .banner ol {
+    position: relative;
+    bottom: 40px;
+    left: 600px; }
+    .banner ol li {
+      float: left;
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      text-align: center;
+      line-height: 20px;
+      margin-left: 10px;
+      border-radius: 50%;
+      background-color: #000;
+      color: #fff; }
+
+.banner ol .active {
+  background-color: red; }
+
+.catitem {
+  width: 1200px;
+  height: 470px;
+  margin: 0 auto;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 119px; }
+
+.item_left ul {
+  width: 191px; }
+  .item_left ul li {
+    height: 81px;
+    border-bottom: 1px solid #f7f7f7;
+    background-color: #fff;
+    padding: 0 20px; }
+
+.item_p1 {
+  line-height: 26px;
+  height: 26px;
+  font-size: 14px;
+  color: #333; }
+
+.item_right {
+  height: 470px;
+  background-color: #fff; }
+
+.item_right ul {
+  width: 190px; }
+  .item_right ul li {
+    height: 156px;
+    position: relative;
+    overflow: hidden; }
+    .item_right ul li img {
+      position: absolute;
+      left: 950px; }
+
+.main {
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+  height: 940px; }
+  .main .main_left {
+    display: block;
+    position: absolute;
+    left: -380px;
+    overflow: hidden; }
+  .main .main_right {
+    width: 120px;
+    display: block;
+    position: absolute;
+    right: 201px;
+    overflow: hidden; }
+  .main .main_center {
+    width: 1200px;
+    margin: 0 auto;
+    position: absolute;
+    left: 120px; }
+    .main .main_center ul {
+      width: 100%; }
+      .main .main_center ul .nav_li {
+        width: 183px;
+        border: 1px solid #ddd;
+        text-align: center;
+        line-height: 38px;
+        float: left;
+        background-color: #f7f7f7;
+        color: #666;
+        cursor: pointer; }
+
+.tab_box {
+  width: 925px;
+  margin-bottom: 10px; }
+
+.tab_list {
+  border: 1px solid #f7f7f7; }
+  .tab_list ul {
+    width: 910px; }
+    .tab_list ul li {
+      width: 184px;
+      color: #999;
+      font-size: 12px;
+      float: left; }
+  .tab_list .list_p {
+    color: red; }
+
+.not_list {
+  width: 270px;
+  border: 1px solid #ddd; }
+  .not_list li {
+    width: 133px;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 38px;
+    float: left;
+    background-color: #f7f7f7;
+    color: #666;
+    cursor: pointer; }
+  .not_list p {
+    padding-left: 10px;
+    line-height: 28px; }
+    .not_list p span {
+      font-size: 12px;
+      color: #666;
+      margin-left: 10px; }
+
+.not_pic {
+  cursor: pointer;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  overflow: hidden; }
+
+.main_bottom {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px; }
+  .main_bottom a {
+    margin-left: 20px;
+    padding: 20px 0 0 90px;
+    display: block;
+    float: left;
+    background-color: #f7f7f7; }
+
+.new_icon {
+  width: 1200px; }
+  .new_icon h3 {
+    height: 40px;
+    line-height: 40px;
+    font-weight: normal;
+    padding-left: 15px; }
+  .new_icon ul {
+    border: 1px solid #ddd; }
+    .new_icon ul li {
+      float: left;
+      width: 198px;
+      height: 257px;
+      font-size: 12px; }
+      .new_icon ul li p {
+        color: #666; }
+      .new_icon ul li strong {
+        color: red; }
+
+.loutinav {
+  width: 30px;
+  position: fixed;
+  left: 100px;
+  top: 100px;
+  border: 1px solid red;
+  z-index: 99; }
+  .loutinav a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    color: orange; }
+
+.whitej {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 12px; }
+  .whitej .title {
+    line-height: 40px; }
+
+.title_left {
+  font-size: 18px; }
+  .title_left span {
+    display: block;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px;
+    background-color: red;
+    margin-right: 10px;
+    color: #fff; }
+
+.title_right span {
+  margin: 0 5px;
+  font-size: 12px;
+  color: #999; }
+
+.title_right a:hover {
+  color: red;
+  text-decoration: underline; }
+
+.white_right ul {
+  width: 988px;
+  height: 486px;
+  border: 1px solid #ddd; }
+  .white_right ul li {
+    width: 20%;
+    float: left; }
+    .white_right ul li p {
+      font-size: 12px; }
+    .white_right ul li span {
+      color: red; }
+
+.hot_box {
+  width: 186px;
+  height: 131px;
+  padding: 20px 10px 10px 14px;
+  background-color: #f9f9f9; }
+
+.hot_title {
+  line-height: 40px; }
+  .hot_title span {
+    font-size: 12px;
+    color: #999; }
+  .hot_title a:hover {
+    color: red;
+    text-decoration: underline; }
+
+.hot_left span {
+  color: red; }
+
+.hot_box h3 {
+  height: 30px;
+  line-height: 30px;
+  color: red; }
+
+.hot_box p {
+  height: 26px;
+  line-height: 26px;
+  font-size: 16px; }
+  .hot_box p a {
+    margin-right: 25px; }
+
+.hot_main {
+  width: 100%; }
+  .hot_main li {
+    float: left;
+    width: 197px;
+    margin-top: 20px; }
+
+.hot_deg {
+  width: 80px;
+  font-size: 12px; }
+  .hot_deg p {
+    color: #999; }
+  .hot_deg span {
+    color: red; }
+
+.foot {
+  width: 100%;
+  background-color: #222;
+  padding-top: 20px;
+  margin-top: 30px; }
+
+.foot_box {
+  width: 1200px;
+  margin: 0 auto;
+  color: #999;
+  font-size: 12px;
+  margin-top: 50px; }
+
+.foot p {
+  line-height: 28px; }
+
+.foot_p1 .foot_p2 {
+  color: #333; }
+
+.foot_pic {
+  margin: 10px 0; }
+
+.foot_p4 {
+  color: red; }
 
 /*# sourceMappingURL=index.css.map */

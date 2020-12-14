@@ -5,10 +5,10 @@ const css = require('gulp-cssmin');
 
 
 
-const babel = require('gulp-babel'); 
-const bablecore = require('babel-core'); 
-const es2015 = require('babel-preset-es2015'); 
-const uglifyjs = require('gulp-uglifyjs'); 
+//const babel = require('gulp-babel'); 
+//const bablecore = require('babel-core'); 
+//const es2015 = require('babel-preset-es2015'); 
+//const uglifyjs = require('gulp-uglifyjs'); 
 
 const watch = require('gulp-watch');
 // const imagemin = require('gulp-imagemin');
@@ -21,12 +21,9 @@ const plugins = require('gulp-load-plugins');
 
 
 //1.复制文件 - 无需安装包 - 考试的重点
-// gulp.task('copyfile', () => {
-//     return gulp.src('src/fonts/*.woff').pipe(gulp.dest('dist/fonts/'));
-// });
-// gulp.task('copyfile', () => {
-//     return gulp.src('src/fonts/*.woff').pipe(gulp.dest('dist/fonts/'));
-// });
+gulp.task('copyfile', () => {
+    return gulp.src('src/fonts/*.woff').pipe(gulp.dest('dist/fonts/'));
+});
 
 //2.压缩html文件 - 需要安装包 - gulp-minify-html/gulp-htmlmin
 gulp.task('uglifyhtml', () => {
@@ -63,9 +60,10 @@ gulp.task('runimg', function() {
 gulp.task('runsass', function() {
     return gulp.src('src/sass/*.scss')
         .pipe(sourcemaps.init()) //初始化map文件
-        .pipe(sass({
-            outputStyle: 'compressed' //执行编译,compressed:压缩一行
-        }))
+        .pipe(sass())
+        // .pipe(sass({
+        //     outputStyle: 'compressed' //执行编译,compressed:压缩一行
+        // }))
         .pipe(sourcemaps.write('./')) //生成写入map文件
         .pipe(gulp.dest('src/style/')); //输出
 });
@@ -74,6 +72,9 @@ gulp.task('runsass', function() {
 //watch([监听的目录])
 //gulp.parallel 并行运行任务 
 //被监听的任务必须先执行一次。 'uglifyhtml', 'uglifycss', 'uglifyjs'
+// gulp.task('default', function() {
+//     watch(['src/*.html', 'src/style/*.css','src/sass/*.scss', 'src/script/*.js'], gulp.parallel('uglifyhtml', 'uglifycss', 'uglifyjs','runsass'));
+// });
 gulp.task('default', function() {
-    watch(['src/*.html', 'src/style/*.css','src/sass/*.scss', 'src/script/*.js'], gulp.parallel('uglifyhtml', 'uglifycss', 'uglifyjs','runsass'));
+    watch(['src/sass/*.scss'], gulp.parallel('runsass'));
 });

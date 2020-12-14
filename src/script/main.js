@@ -22,7 +22,7 @@ require(['jquery'], function() {
     console.log($);
     // //获取script标签里面的自定义属性targetpage的值
     // console.log($('#currentpage').attr('data-orign'));
-    let $modulepage = $('#currentpage').attr('data-orign');
+    let $modulepage = $('#currentpage').attr('data-origin');
     require([$modulepage], function(modulepage) { //不同的页面加载不同的模块
         modulepage.init();
     });
