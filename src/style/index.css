@@ -85,8 +85,7 @@ caption, th, td {
 
 .top_mid {
   width: 1200px;
-  margin: 35px auto 35px;
-  border: 1px solid red; }
+  margin: 35px auto 35px; }
 
 .logo {
   width: 257px;
@@ -126,7 +125,10 @@ caption, th, td {
     margin: 0 6px; }
 
 .protect {
-  width: 363px; }
+  width: 363px;
+  height: 68px;
+  margin-left: 20px;
+  background: url(http://misc.jiuxian.com/img/newIndexImg/headerProPic1.png) no-repeat top left; }
 
 .t_nav {
   width: 100%;
@@ -164,55 +166,64 @@ caption, th, td {
 
 .banner {
   width: 100%;
-  position: relative;
-  overflow: hidden;
-  z-index: 2; }
-  .banner ul {
-    position: relative;
+  overflow: hidden; }
+  .banner .wrap {
     width: 1200px;
+    margin: 0 auto;
     height: 470px;
-    margin: 0 auto; }
-    .banner ul li {
-      display: none; }
-    .banner ul img {
-      position: absolute;
-      left: 50%;
-      margin-left: -950px; }
-  .banner ol {
     position: relative;
-    bottom: 40px;
-    left: 600px; }
-    .banner ol li {
-      float: left;
-      width: 20px;
-      height: 20px;
-      font-size: 12px;
-      text-align: center;
-      line-height: 20px;
-      margin-left: 10px;
-      border-radius: 50%;
-      background-color: #000;
-      color: #fff; }
+    z-index: 1; }
+    .banner .wrap .wrap_list {
+      width: 1200px;
+      height: 470px;
+      cursor: pointer; }
 
-.banner ol .active {
+.lunbo {
+  position: absolute;
+  left: 50%;
+  margin-left: -950px;
+  display: none; }
+
+.lunbo.show {
+  display: block; }
+
+.wrap_ol {
+  position: absolute;
+  bottom: 40px;
+  left: 492px;
+  z-index: 6; }
+
+.wrap_ol li {
+  float: left;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer; }
+
+.wrap_ol li.active {
   background-color: red; }
 
-.catitem {
-  width: 1200px;
+.item_left {
+  width: 191px;
   height: 470px;
-  margin: 0 auto;
-  z-index: 5;
   position: absolute;
+  left: 0;
   top: 0;
-  left: 119px; }
-
-.item_left ul {
-  width: 191px; }
-  .item_left ul li {
-    height: 81px;
-    border-bottom: 1px solid #f7f7f7;
-    background-color: #fff;
-    padding: 0 20px; }
+  z-index: 9; }
+  .item_left .item_list {
+    height: 470px;
+    z-index: 10; }
+    .item_left .item_list li {
+      height: 81px;
+      border-bottom: 1px solid #f7f7f7;
+      background-color: #fff;
+      padding: 0 20px; }
 
 .item_p1 {
   line-height: 26px;
@@ -221,18 +232,46 @@ caption, th, td {
   color: #333; }
 
 .item_right {
+  position: absolute;
+  right: -22px;
+  top: 0;
   height: 470px;
+  z-index: 9;
   background-color: #fff; }
 
-.item_right ul {
+.item_right a {
+  display: block;
+  height: 156px;
   width: 190px; }
-  .item_right ul li {
-    height: 156px;
-    position: relative;
-    overflow: hidden; }
-    .item_right ul li img {
-      position: absolute;
-      left: 950px; }
+
+.menu div {
+  width: 577px;
+  height: 460px;
+  border: 1px solid #ddd;
+  position: absolute;
+  background-color: #f7f7f7;
+  top: 0;
+  left: 188px;
+  padding-top: 10px;
+  z-index: 99; }
+
+.menu .item {
+  display: none; }
+
+.menu p {
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #999;
+  border-bottom: 1px dotted #888;
+  margin-left: 50px; }
+  .menu p span {
+    margin: 0 5px; }
+  .menu p a:hover {
+    color: red; }
+
+#a_list {
+  color: orange; }
 
 .main {
   width: 100%;
@@ -248,7 +287,7 @@ caption, th, td {
     width: 120px;
     display: block;
     position: absolute;
-    right: 201px;
+    right: 0;
     overflow: hidden; }
   .main .main_center {
     width: 1200px;
@@ -339,21 +378,28 @@ caption, th, td {
       .new_icon ul li strong {
         color: red; }
 
-.loutinav {
+.stairway {
   width: 30px;
   position: fixed;
-  left: 100px;
-  top: 100px;
+  left: 70px;
+  top: 400px;
+  display: none;
   border: 1px solid red;
   z-index: 99; }
-  .loutinav a {
-    display: block;
-    width: 20px;
-    height: 20px;
+  .stairway li {
+    width: 30px;
+    height: 30px;
+    background-color: #cdcdcd;
     border-radius: 50%;
     text-align: center;
-    line-height: 20px;
-    color: orange; }
+    line-height: 30px;
+    margin-top: 3px;
+    color: #f7f7f7;
+    cursor: pointer; }
+
+.stairway li.active {
+  background-color: red;
+  display: block; }
 
 .whitej {
   width: 1200px;

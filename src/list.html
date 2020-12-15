@@ -5,28 +5,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>商品列表页</title>
-    <link rel="stylesheet" href="css/pagination.css">
-    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="style/rest.css">
+    <link rel="stylesheet" href="style/pagination.css">
+    <link rel="stylesheet" href="style/list.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="list_module"></script>
 </head>
 
 <body>
-    <!-- 列表页的结构 -->
-    <div class="list">
-        <ul>
-
-        </ul>
-    </div>
-
-    <!-- 分页的结构 -->
-    <div class="pagelist">
-        <div class="m-style page">
+    <div class="header">
+        <div class="top_head">
+            <div class="top_headmid clr_fix">
+                <div class="top_left fl">
+                    <p>
+                        <span>欢迎来酒仙网！</span>
+                        <a href="#">请登录</a>
+                        <a href="#">免费注册</a>
+                    </p>
+                </div>
+                <div class="top_right fr">
+                    <ul>
+                        <li><a href="">我的酒仙</a></li>
+                        <li><a href="">CEO邮箱</a></li>
+                        <li><a href="">购物车</a></li>
+                        <li><a href="">CLUB会员</a></li>
+                        <li><a href="">招商入驻</a></li>
+                        <li><a href="">手机逛酒仙</a></li>
+                        <li><a href="">网站导航</a></li>
+                        <li><a href="">客服中心</a></li>
+                        <li><a href="">客服热线</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="ad">
+            <a href="#"></a>
+        </div>
+        <div class="top_mid clr_fix">
+            <div class="logo fl">
+                <a href="#">
+                    <img src="http://misc.jiuxian.com/logo/logo_137_65.png" alt="">
+                </a>
+                <a href="#">
+                    <img src="http://img08.jiuxian.com/bill/2019/1111/9d7ea5de698e4bacab10b92579742616.gif" alt="">
+                </a>
+            </div>
+            <div class="search fl">
+                <form action="" method="GET" class="s_form clr_fix">
+                    <input type="text" class="sear_input fl">
+                    <input type="submit" class="btn fl" value="搜&nbsp;&nbsp;索">
+                </form>
+                <ul>
+                    <li>
+                        <a href="http://shop.jiuxian.com/index-1310.htm">五粮液</a>
+                        <s>|</s>
+                    </li>
+                    <li>
+                        <a href="http://shop.jiuxian.com/brand-381/activity-4569.htm?source=3">茅台</a>
+                        <s>|</s>
+                    </li>
+                    <li>
+                        <a href="http://shop.jiuxian.com/brand-41/activity-3399.htm?source=27">酒鬼</a>
+                        <s>|</s>
+                    </li>
+                    <li>
+                        <a href="http://list.jiuxian.com/search.htm?area=2&key=%E6%8B%89%E8%8F%B2">拉菲</a>
+                        <s>|</s>
+                    </li>
+                    <li>
+                        <a href="http://shop.jiuxian.com/index-1321.htm">郎酒</a>
+                        <s>|</s>
+                    </li>
+                    <li>
+                        <a href="http://list.jiuxian.com/2-254-0-0-0-0-0-0-0-0-0-0.htm">黄尾袋鼠</a>
+                        <s>|</s>
+                    </li>
+                    <li>
+                        <a href="http://shop.jiuxian.com/brand-386/activity-4739.htm">水井坊</a>
+                        <s>|</s>
+                    </li>
+                    <li>
+                        <a href="http://list.jiuxian.com/1-14-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0-0.htm">泸州老窖</a>
+                        <s>|</s>
+                    </li>
+                    <li>
+                        <a href="http://list.jiuxian.com/4-112-0-0-0-0-0-0-0-0-0-0.htm?area=6#v2">人头马</a>
+                        <s>|</s>
+                    </li>
+                    <li>
+                        <a href="http://shop.jiuxian.com/index-1314.htm">董酒</a>
+                        <s>|</s>
+                    </li>
+                    <li>
+                        <a href="http://shop.jiuxian.com/brand-381/activity-4607.htm">清仓</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="protect"></div>
         </div>
     </div>
-    <!-- 引入jquery -->
-    <!-- 引入懒加载插件 -->
-    <!-- 引入分页的插件 -->
-    <!-- 引入列表js代码 -->
+    <div class="t_nav">
+        <div class="nav">
+            <a href="" class="nav_all">全部商品分类</a>
+            <ul class="nav_list fl">
+                <li><a href="">首页</a></li>
+                <li><a href="">CLUB</a></li>
+                <li><a href="">自营甄选</a></li>
+                <li><a href="">爆品夭折日</a></li>
+                <li><a href="">葡萄酒管</a></li>
+                <li><a href="">周末惠</a></li>
+                <li><a href="">洋酒管</a></li>
+                <li><a href="">新品</a></li>
+                <li><a href="">门店加盟</a></li>
+            </ul>
+            <a href="" class="fr">
+                <img src="http://img10.jiuxian.com/bill/2020/1201/0fafa7ccd1f3487d890ca8ef8b53e686.gif" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="title">
+            <button class="btn1">默认排序</button>
+            <button class="btn2">价格&nbsp;&nbsp;⬆️</button>
+            <button class="btn3">价格&nbsp;&nbsp;⬇️</button>
+        </div>
+        <div class="content">
 
+            <ul class="clr_fix">
+
+            </ul>
+        </div>
+        <div class="pagelist">
+            <div class="m-style page">
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="foot_box">
+            <p class="foot_p1">
+                <a href="">公司简介</a>
+                <span>|</span>
+                <a href="">管理团队</a>
+                <span>|</span>
+                <a href="">媒体报道</a>
+                <span>|</span>
+                <a href="">联系我们</a>
+                <span>|</span>
+                <a href="">友情链接</a>
+                <span>|</span>
+                <a href="">网站地图</a>
+                <span>|</span>
+                <a href="">品牌大全</a>
+                <span>|</span>
+                <a href="">中酿国际</a>
+            </p>
+            <p class="foot_p2">酒仙网络科技股份有限公司&nbsp;&nbsp;©&nbsp;&nbsp;酒仙网&nbsp;&nbsp;&nbsp;2011&nbsp;&nbsp;jiuxian.com&nbsp;&nbsp;All&nbsp;&nbsp;&nbsp;Rights&nbsp;Reserved&nbsp;&nbsp;&nbsp;京ICP备17043395号</a>&nbsp;&nbsp;&nbsp;京公网安备11030102000060
+            </p>
+            <p class="foot_p3">
+                <a href="">酒仙网白酒</a>
+                <span>|</span>
+                <a href="">酒仙网葡萄酒</a>
+                <span>|</span>
+                <a href="">开放平台招商</a>
+                <span>|</span>
+                <a href="">酒仙网团购</a>
+                <span>|</span>
+                <a href="">更多</a>
+            </p>
+            <p>统一社会信用代码&nbsp;&nbsp;91110302306646672B&nbsp;&nbsp;&nbsp;食品流通许可证编号&nbsp;&nbsp;JY11131010328793&nbsp;&nbsp;&nbsp;京食药网食备201910019&nbsp;&nbsp;&nbsp;</p>
+            <p>
+                地址：北京市北京经济技术开发区经海五路58号院8幢4层
+            </p>
+            <div class="foot_pic">
+                <img src="https://rr.knet.cn/static/images/logo/cnnic.png" alt="">
+                <img src="http://misc.jiuxian.com/img/newIndexImg/copyBot03.jpg" alt="">
+            </div>
+            <p class="foot_p4">
+                购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>

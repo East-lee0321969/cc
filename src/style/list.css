@@ -1,0 +1,246 @@
+@charset .top_head {
+    width: 100%;
+    height: 27px;
+    background-color: #f2f2f2;
+}
+
+.top_head .top_headmid {
+    width: 1200px;
+    margin: 0 auto;
+    height: 27px;
+    line-height: 27px;
+}
+
+.top_head .top_headmid .top_left {
+    width: 370px;
+    height: 100%;
+}
+
+.top_head .top_headmid .top_right {
+    width: 785px;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.top_left span {
+    font-size: 12px;
+    color: #999;
+}
+
+.top_right li {
+    float: left;
+    margin: 0 5px;
+}
+
+.ad {
+    height: 90px;
+    width: 100%;
+}
+
+.ad a {
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: url(http://img10.jiuxian.com/bill/2020/1210/852f68135f284722b82f963e7155d043.jpg) no-repeat top center scroll;
+}
+
+.top_mid {
+    width: 1200px;
+    margin: 35px auto 35px;
+    border: 1px solid red;
+}
+
+.logo {
+    width: 257px;
+    padding: 4px 3px 0;
+    margin: 0 auto;
+}
+
+.logo a {
+    display: block;
+    float: left;
+    margin-right: 3px;
+}
+
+.search .s_form {
+    margin-top: 5px;
+    border: 1px solid #CC0000;
+}
+
+.search .s_form .sear_input {
+    width: 450px;
+    height: 33px;
+    outline: none;
+    border: 2px solid #CC0000;
+}
+
+.search .s_form .btn {
+    width: 85px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    color: #fff;
+    border: 2px solid #CC0000;
+    background-color: #CC0000;
+}
+
+.search li {
+    float: left;
+}
+
+.search li a:hover {
+    color: #CC0000;
+    text-decoration: underline;
+}
+
+.search li s {
+    font-size: 12px;
+    color: #999;
+    margin: 0 6px;
+}
+
+.protect {
+    width: 363px;
+}
+
+.t_nav {
+    width: 100%;
+    height: 34px;
+    background-color: #990000;
+}
+
+.t_nav .nav {
+    width: 1200px;
+    height: 34px;
+    margin: 0 auto;
+}
+
+.t_nav .nav .nav_all {
+    display: block;
+    float: left;
+    width: 190px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 34px;
+    color: #fff;
+    text-align: center;
+}
+
+.t_nav .nav a:hover {
+    background-color: #b40c10;
+}
+
+.nav_list {
+    width: 890px;
+    height: 34px;
+}
+
+.nav_list li {
+    float: left;
+    line-height: 33px;
+    padding: 0 17px;
+    text-align: center;
+}
+
+.nav_list li a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.nav_list li:hover {
+    background-color: #b40c10;
+}
+
+.main {
+    position: relative;
+}
+
+.title {
+    position: absolute;
+    left: 100px;
+}
+
+.title button {
+    width: 100px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    background-color: #f7f7f7;
+    border: none;
+    color: #999;
+    font-size: 14px;
+    float: left;
+}
+
+.title button:hover {
+    background-color: red;
+    color: #fff;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+
+.content li {
+    width: 252px;
+    height: 400px;
+    margin: 8px 18px;
+    padding-left: 8px;
+    float: left;
+}
+
+.content li:hover {
+    box-shadow: darkgrey 0px 0px 2px 2px;
+}
+
+.content li span {
+    font-size: 16px;
+    color: red;
+    margin-top: 10px;
+}
+
+.content li a {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    line-height: 25px;
+}
+
+.content li a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.foot {
+    width: 100%;
+    background-color: #222;
+    padding-top: 20px;
+    margin-top: 100px;
+}
+
+.foot_box {
+    width: 1200px;
+    margin: 0 auto;
+    color: #999;
+    font-size: 12px;
+    margin-top: 50px;
+}
+
+.foot p {
+    line-height: 28px;
+}
+
+.foot_p1 .foot_p2 {
+    color: #333;
+}
+
+.foot_pic {
+    margin: 10px 0;
+}
+
+.foot_p4 {
+    color: red;
+}

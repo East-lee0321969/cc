@@ -13,11 +13,25 @@
       "unicode_decimal": 983417
     },
     {
+      "icon_id": "552162",
+      "name": "erweima",
+      "font_class": "iconfonterweima",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
       "icon_id": "637808",
       "name": "洋酒",
       "font_class": "yangjiu",
       "unicode": "e634",
       "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "689319",
+      "name": "心",
+      "font_class": "xin",
+      "unicode": "e82a",
+      "unicode_decimal": 59434
     },
     {
       "icon_id": "831907",
@@ -62,11 +76,25 @@
       "unicode_decimal": 58896
     },
     {
+      "icon_id": "3670098",
+      "name": "用户反馈",
+      "font_class": "tubiaolunkuo-",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
       "icon_id": "5000357",
       "name": "kefu",
       "font_class": "kefu",
-      "unicode": "e608",
-      "unicode_decimal": 58888
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "5961366",
+      "name": "列表",
+      "font_class": "liebiao",
+      "unicode": "ec6b",
+      "unicode_decimal": 60523
     },
     {
       "icon_id": "6537198",
@@ -97,11 +125,46 @@
       "unicode_decimal": 58897
     },
     {
+      "icon_id": "10941886",
+      "name": "食品",
+      "font_class": "shipin",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
       "icon_id": "11372711",
       "name": "图片",
       "font_class": "tupian",
       "unicode": "e8ba",
       "unicode_decimal": 59578
+    },
+    {
+      "icon_id": "12897860",
+      "name": "上",
+      "font_class": "shang-",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "15282758",
+      "name": "酒瓶",
+      "font_class": "jiuping",
+      "unicode": "e6d5",
+      "unicode_decimal": 59093
+    },
+    {
+      "icon_id": "15589319",
+      "name": "酒杯，酒，器皿，高脚杯，庆祝，香槟",
+      "font_class": "jiubeijiuqimingaojiaobeiqingzhuxiangbin",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "16197988",
+      "name": "上",
+      "font_class": "shang",
+      "unicode": "e693",
+      "unicode_decimal": 59027
     },
     {
       "icon_id": "17784684",
