@@ -6,7 +6,6 @@ define([], () => {
             const $ulist = $('.wrap_list');
             const $piclist = $('.lunbo');
             const $btnlist = $('.wrap_ol li');
-            const $white = $('.white_right ul');
             const $item_list = $('.item_list li')
             const $menu = $('.menu .item');
             let $num = 0;
@@ -64,22 +63,25 @@ define([], () => {
 
 
             //楼梯效果
-            var $stairway = $('.stairway');
-            var $stair = $('.stairway li').not('.last');
-            var $whitej = $('.whitej');
+            const $stairway = $('.stairway');
+            const $stair = $('.stairway li').not('.last');
+            const $whitej = $('.whitej');
 
             function scroll() {
                 var $scrolltop = $(window).scrollTop(); //获取滚动条的top值
-                if ($scrolltop >= 1314) {
+                if ($scrolltop >= 1234) {
                     $stairway.show();
                 } else {
                     $stairway.hide();
                 }
                 $whitej.each(function(index, element) {
+                    //console.log($(element).offset().top);
                     var $whitejtop = $(element).offset().top;
                     if ($whitejtop >= $scrolltop) {
                         $stair.removeClass('active');
-                        $stair.eq(index).addClass('active');
+                        $stair.eq(index).addClass('active').siblings('li');
+                        $('.floor').css('opacity', 1);
+                        return false;
                     }
                 })
             }
@@ -92,7 +94,7 @@ define([], () => {
 
 
             $stair.on('click', function() {
-                $(window).off('scroll');
+                //$(window).off('scroll');
                 //求出每个楼层的top值。
                 $(this).addClass('active').siblings('li').removeClass('active');
                 var $whitejtop = $whitej.eq($(this).index()).offset().top;
@@ -123,7 +125,7 @@ define([], () => {
 
 
             $.ajax({
-                url: 'http://localhost:8080/dashboard/projectname/php/index1.php',
+                url: 'http://192.168.64.3/dashboard/jiuxian/php/index1.php',
                 dataType: 'json'
             }).done(function(data) {
                 console.log(data);
@@ -137,7 +139,7 @@ define([], () => {
                 </li>
             `;
                 });
-                $white.html($strhtml);
+                $('.whitej').html($strhtml);
             });
         }
     }

@@ -2,11 +2,10 @@
 
 include "conn.php";
 //2.输出接口
-$result=$conn->query("select * from taobaogoods");
+$result=$conn->query("select * from jiuxianone");
 
 $arr = array();
-
-for($i=0;$i<$result->num_rows;$i++){
+for ($i = 0; $i < $result->num_rows; $i++) {
     $arr[$i] = $result->fetch_assoc();
 }
 

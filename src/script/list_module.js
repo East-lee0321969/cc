@@ -11,7 +11,7 @@ define(['pagination', 'jlazyload'], function() {
             let $next = []; //li里面的商品的后一个价格
             //1.渲染列表页面
             $.ajax({
-                url: 'http://localhost:8080/dashboard/projectname/php/listdata.php',
+                url: 'http://192.168.64.3/dashboard/jiuxian/php/listdata.php',
                 dataType: 'json'
             }).done(function(datalist) {
                 console.log(datalist);
@@ -49,7 +49,7 @@ define(['pagination', 'jlazyload'], function() {
                     callback: function(api) {
                         console.log(api.getCurrent()); //获取当前的点击的页码。
                         $.ajax({
-                            url: 'http://localhost:8080/dashboard/projectname/php/listdata.php',
+                            url: 'http://192.168.64.3/dashboard/jiuxian/php/listdata.php',
                             data: {
                                 page: api.getCurrent()
                             },

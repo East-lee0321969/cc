@@ -1,27 +1,96 @@
 $page_width:100%;
 $box_width:1200px;
-.foot{
+.foot {
     width: $page_width;
     background-color: #222;
     padding-top: 20px;
     margin-top: 30px;
 }
-.foot_box{
+
+.foot_box {
     width: $box_width;
     margin: 0 auto;
     color: #999;
     font-size: 12px;
     margin-top: 50px;
 }
-.foot p{
+
+.foot p {
     line-height: 28px;
 }
-.foot_p1 .foot_p2{
+
+.foot_p1 .foot_p2 {
     color: #333;
 }
-.foot_pic{
+
+.foot_pic {
     margin: 10px 0;
 }
-.foot_p4{
+
+.foot_p4 {
     color: red;
+}
+
+.rightSidebar {
+    width: 35px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    padding-top: 200px;
+    background-color: #f7f7f7;
+    border-left: 1px solid #f6f6f6;
+    z-index: 999;
+}
+
+.rightSidebar i {
+    display: block;
+    margin: 0 auto;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #cc3333;
+    color: #fff;
+}
+
+.sidebar span {
+    font-size: 12px;
+    display: block;
+    width: 24px;
+    margin: 0 auto;
+}
+
+.sidebar .sid_span3 {
+    display: block;
+    margin: 0 auto;
+    color: #000;
+    width: 12px;
+}
+
+.sidebar {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sidebar:hover {
+    background-color: #cc3333;
+}
+
+.sidebar_bottom {
+    margin-top: 200px;
+}
+
+.sidebar_bottom em {
+    display: block;
+    width: 35px;
+    padding: 10px 0;
+    font-size: 19px;
+    color: #ccc;
+}
+
+.sidebar_bottom em:hover {
+    background-color: #CC0000;
+    color: #fff;
 }

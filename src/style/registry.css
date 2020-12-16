@@ -1,30 +1,36 @@
-.top_head{
+.top_head {
     width: 1000px;
     margin: 0 auto;
     height: 88px;
 }
-.logo{
+
+.logo {
     margin-top: 10px;
 }
-.top_login p{
+
+.top_login p {
     font-size: 12px;
     color: #999;
     margin-top: 48px;
     height: 14px;
     line-height: 14px;
 }
-.top_login span{
+
+.top_login span {
     margin: 0 8px;
 }
-.top_login a{
+
+.top_login a {
     color: #0066cc;
 }
-.banner{
+
+.banner {
     width: 100%;
     background: url(https://login.jiuxian.com/img/reg/bg.jpg) repeat-x;
     padding-top: 60px;
 }
-.ban_form{
+
+.ban_form {
     width: 1000px;
     height: 450px;
     margin: 0 auto;
@@ -32,31 +38,38 @@
     background-color: #fff;
     border: 2px solid #999;
 }
-.reg_p{
+
+.reg_p {
     width: 500px;
     height: 42px;
     margin: 25px auto;
 }
-.put{
+
+.put {
     width: 300px;
     height: 42px;
 }
-.ban_form label{
+
+.ban_form label {
     margin-right: 20px;
     color: #666;
 }
-.check{
+
+.check {
     padding-left: 160px;
     margin-bottom: 0;
 }
-.check span{
+
+.check span {
     font-size: 12px;
     color: #999;
 }
-.check a{
+
+.check a {
     color: #0066cc;
 }
-.ban_form .reg_sub{
+
+.ban_form .reg_sub {
     width: 302px;
     height: 42px;
     font-size: 18px;
@@ -67,24 +80,28 @@
     cursor: pointer;
     margin-left: 336px;
 }
-.footer{
+
+.footer {
     width: 100%;
     background-color: #f7f7f7;
     margin-top: 20px;
     padding-top: 90px;
 }
-.foot_p{
+
+.foot_p {
     width: 1000px;
     height: 60px;
     margin: 0 auto;
 }
-.foot_p1{
+
+.foot_p1 {
     font-size: 12px;
     line-height: 20px;
     color: #999;
     text-align: center;
 }
-.foot_p2{
+
+.foot_p2 {
     font-size: 12px;
     line-height: 20px;
     color: red;
