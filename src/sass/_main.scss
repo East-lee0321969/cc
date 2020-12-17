@@ -163,19 +163,60 @@ $box_width:1200px;
     }
 }
 
+.white_1 {
+    border-top: 2px solid #c94b56;
+}
+
+.white_2 {
+    border-top: 2px solid #c37632;
+}
+
+.white_3 {
+    border-top: 2px solid #276594;
+}
+
+.white_4 {
+    border-top: 2px solid #6c9d0e;
+}
+
+.white_5 {
+    border-top: 2px solid #fe7a65;
+}
+
 .title_left {
     font-size: 18px;
     span {
         display: block;
-        width: 35px;
+        width: 32px;
         height: 35px;
         border-radius: 50%;
         text-align: center;
+        font-size: 14px;
         line-height: 35px;
         background-color: red;
         margin-right: 10px;
         color: #fff;
     }
+}
+
+.title_left .white_span1 {
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat 2px -93px;
+}
+
+.title_left .white_span2 {
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat -28px -93px;
+}
+
+.title_left .white_span3 {
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat -58px -93px;
+}
+
+.title_left .white_span4 {
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat -91px -93px;
+}
+
+.title_left .white_span5 {
+    background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat 3px -204px;
 }
 
 .title_right span {
@@ -189,20 +230,62 @@ $box_width:1200px;
     text-decoration: underline;
 }
 
+.white_left {
+    width: 210px;
+    height: 485px;
+    overflow: hidden;
+    position: relative;
+}
+
+.u_list {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.u_list li {
+    float: left;
+}
+
+.btn_ol {
+    position: absolute;
+    left: 70px;
+    bottom: 20px;
+}
+
+.btn_ol li {
+    width: 13px;
+    height: 13px;
+    background-color: #f7f7f7;
+    border-radius: 50%;
+    margin-left: 8px;
+    float: left;
+}
+
+.btn_ol li.active {
+    background-color: plum;
+}
+
 .white_right ul {
     width: 988px;
     height: 486px;
     border: 1px solid #ddd;
     li {
-        width: 20%;
+        width: 196px;
         float: left;
-        p {
+        a {
             font-size: 12px;
         }
         span {
             color: red;
+            display: block;
         }
     }
+}
+
+.white_right ul a:hover {
+    color: rgb(148, 65, 65);
+    text-decoration: underline;
 }
 
 .hot_box {

@@ -7,12 +7,13 @@
     <title>酒仙网-白酒、红酒、洋酒、保健酒、黄酒、酒具官方旗舰店</title>
     <link rel="stylesheet" href="./style/rest.css">
     <link rel="stylesheet" href="./style/registry.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="registry_module"></script>
 </head>
 
 <body>
     <div class="top_head">
         <div class="logo fl">
-            <a href="">
+            <a href="index.html">
                 <img src="http://misc.jiuxian.com/logo/logo_137_65.png" alt="">
                 <img src="https://login.jiuxian.com/img/reg/slogan.jpg" alt="">
             </a>
@@ -20,24 +21,24 @@
         <div class="top_login fr">
             <p>
                 <span>欢迎来到酒仙网！</span>
-                <a href="">请登录</a>
+                <a href="login.html">请登录</a>
                 <span>帮助中心</span>
             </p>
         </div>
     </div>
     <div class="banner">
-            <form action="" method="post" class="ban_form">
-                <p class="reg_p"><label for="">手&nbsp;机&nbsp;号&nbsp;</label><input type="text" name="telphone" class="put"></p>
-                <p class="reg_p"><label for="">验&nbsp;证&nbsp;码&nbsp;</label><input type="text" name="yzm" class="put"></p>
-                <p class="reg_p"><label for="">设置密码</label><input type="password" name="password" id="password" class="put"></p>
-                <p class="reg_p"><label for="">确认密码</label><input type="password" name="password" id="password" class="put"></p>
-                <p class="reg_p check">
-                    <input type="checkbox" checked>
-                    <span>我已阅读并同意</span>
-                    <a href="http://help.jiuxian.com/view-1-112.htm">《酒仙网用户注册协议》</a>
-                </p>
-                <p><input type="button" value="立&nbsp;即&nbsp;注&nbsp;册" class="reg_sub"></p>
-            </form>
+        <form action="http://192.168.64.3/dashboard/jiuxian/php/reg.php" method="post" class="ban_form">
+            <p class="reg_p"><label for="">手&nbsp;机&nbsp;号&nbsp;</label><em class="reg_em1"></em><input type="text" name="telphone" id="tel" class="put"><span class="reg_span"></span></p>
+            <p class="reg_p"><label for="">设置密码</label><em class="reg_em2"></em><input type="password" name="password1" id="password" class="put"><span class="reg_span"></span></p>
+            <p class="reg_p"><label for="">确认密码</label><em class="reg_em2"></em><input type="password" name="password2" id="confirm" class="put"><span class="reg_span"></span></p>
+            <p class="reg_p check">
+                <input id="checked" type="checkbox" checked>
+                <em>我已阅读并同意</em>
+                <a href="http://help.jiuxian.com/view-1-112.htm">《酒仙网用户注册协议》</a>
+            </p>
+            <span></span>
+            <p><input type="submit" value="提交注册" name="submit" id="submit"></p>
+        </form>
     </div>
     <div class="footer">
         <div class="foot_p">
@@ -52,5 +53,3 @@
 </body>
 
 </html>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="script/login.js"></script>

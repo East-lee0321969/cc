@@ -218,7 +218,7 @@ caption, th, td {
   width: 191px;
   height: 470px;
   position: absolute;
-  left: 0;
+  left: 7px;
   top: 0;
   z-index: 9; }
   .item_left .item_list {
@@ -238,7 +238,7 @@ caption, th, td {
 
 .item_right {
   position: absolute;
-  right: -22px;
+  right: -11px;
   top: 0;
   height: 470px;
   z-index: 9;
@@ -412,18 +412,49 @@ caption, th, td {
   .whitej .title {
     line-height: 40px; }
 
+.white_1 {
+  border-top: 2px solid #c94b56; }
+
+.white_2 {
+  border-top: 2px solid #c37632; }
+
+.white_3 {
+  border-top: 2px solid #276594; }
+
+.white_4 {
+  border-top: 2px solid #6c9d0e; }
+
+.white_5 {
+  border-top: 2px solid #fe7a65; }
+
 .title_left {
   font-size: 18px; }
   .title_left span {
     display: block;
-    width: 35px;
+    width: 32px;
     height: 35px;
     border-radius: 50%;
     text-align: center;
+    font-size: 14px;
     line-height: 35px;
     background-color: red;
     margin-right: 10px;
     color: #fff; }
+
+.title_left .white_span1 {
+  background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat 2px -93px; }
+
+.title_left .white_span2 {
+  background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat -28px -93px; }
+
+.title_left .white_span3 {
+  background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat -58px -93px; }
+
+.title_left .white_span4 {
+  background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat -91px -93px; }
+
+.title_left .white_span5 {
+  background: url(http://misc.jiuxian.com/img/newIndexImg/newIndexIcon-24.png) no-repeat 3px -204px; }
 
 .title_right span {
   margin: 0 5px;
@@ -434,17 +465,52 @@ caption, th, td {
   color: red;
   text-decoration: underline; }
 
+.white_left {
+  width: 210px;
+  height: 485px;
+  overflow: hidden;
+  position: relative; }
+
+.u_list {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.u_list li {
+  float: left; }
+
+.btn_ol {
+  position: absolute;
+  left: 70px;
+  bottom: 20px; }
+
+.btn_ol li {
+  width: 13px;
+  height: 13px;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+  margin-left: 8px;
+  float: left; }
+
+.btn_ol li.active {
+  background-color: plum; }
+
 .white_right ul {
   width: 988px;
   height: 486px;
   border: 1px solid #ddd; }
   .white_right ul li {
-    width: 20%;
+    width: 196px;
     float: left; }
-    .white_right ul li p {
+    .white_right ul li a {
       font-size: 12px; }
     .white_right ul li span {
-      color: red; }
+      color: red;
+      display: block; }
+
+.white_right ul a:hover {
+  color: #944141;
+  text-decoration: underline; }
 
 .hot_box {
   width: 186px;

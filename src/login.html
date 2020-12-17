@@ -7,6 +7,7 @@
     <title>酒仙网-白酒、红酒、洋酒、保健酒、黄酒、酒具官方旗舰店</title>
     <link rel="stylesheet" href="./style/rest.css">
     <link rel="stylesheet" href="./style/login.css">
+    <script src="https://cdn.bootcdn.net/ajax/libs/require.js/2.3.6/require.min.js" defer async=true data-main="script/main.js" id="currentpage" data-origin="login_module"></script>
 </head>
 
 <body>
@@ -27,28 +28,33 @@
     </div>
     <div class="login">
         <div class="content">
+            <i></i>
             <p class="tool">
                 <em>账号登录</em>
             </p>
             <p class="user">
-                <span></span>
-                <input type="text" name="username">
-                <span></span>
+                <span class="u_span1"></span>
+                <input type="text" name="telphone" id="telphone">
+                <em class="ban_1"></em>
             </p>
             <p class="user">
-                <span></span>
-                <input type="text" name="username">
-                <span></span>
+                <span class="u_span2"></span>
+                <input type="password" name="password" id="passwprd">
+                <em class="ban_2"></em>
             </p>
-            <input type="button" class="save" value="登&nbsp;&nbsp;录">
+            <p><input type="button" value="登录" id="login"></p>
             <p class="auto">
                 <input type="checkbox" checked>
                 <span>自动登录</span>
-                <a href="" class="fr reg_a">免费注册</a>
+                <a href="registry.html" class="fr reg_a">免费注册</a>
                 <a href="" class="fr">忘记密码</a>
             </p>
-            <p>
-                使用合作账号登录
+            <p class="reg">
+                <em>使用合作账号登录</em>
+                <strong class="reg_1"></strong>
+                <strong class="reg_2"></strong>
+                <strong class="reg_3"></strong>
+                <strong class="reg_4"></strong>
             </p>
         </div>
     </div>
@@ -65,5 +71,3 @@
 </body>
 
 </html>
-<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="script/login.js"></script>

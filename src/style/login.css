@@ -1,32 +1,47 @@
 @charset "utf-8";
-.top_head{
+.top_head {
     width: 1000px;
     margin: 0 auto;
     height: 88px;
 }
-.logo{
+
+.logo {
     margin-top: 10px;
 }
-.top_login p{
+
+.top_login p {
     font-size: 12px;
     color: #999;
     margin-top: 48px;
     height: 14px;
     line-height: 14px;
 }
-.top_login span{
+
+.top_login span {
     margin: 0 8px;
 }
-.top_login a{
+
+.top_login a {
     color: #0066cc;
 }
-.login{
+
+.login {
     width: 100%;
-    height: 580px;
-    background-color: #f7f7f7;
+    height: 600px;
+    background: url(https://login.jiuxian.com/img/reg/bj.jpg) no-repeat center top;
     position: relative;
 }
-.content{
+
+.content i {
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    top: 0;
+    right: 0px;
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat 0px -230px;
+}
+
+.content {
     width: 270px;
     height: 300px;
     background-color: #fff;
@@ -36,28 +51,54 @@
     text-align: center;
     padding: 50px 40px;
 }
-.tool em{
+
+.tool em {
     color: red;
 }
-.tool span{
+
+.tool span {
     color: #999;
     font-size: 12px;
 }
-.user{
+
+.user {
     margin: 20px 0;
+    position: relative;
 }
-.user span{
-    text-align: center;
-    line-height: 40px;
-    width: 40px;
+
+.user span {
+    width: 42px;
+    height: 42px;
+    display: block;
+    position: absolute;
+    left: 18px;
+    top: 1px;
 }
-.user input{
+
+.ban_1,
+.ban_2 {
+    font-size: 14px;
+    position: absolute;
+    bottom: -22px;
+    right: 17px;
+}
+
+.u_span1 {
+    background: #f7f7f7 url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat -40px 11px;
+}
+
+.u_span2 {
+    background: #f7f7f7 url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat -70px 11px;
+}
+
+.user input {
     width: 190px;
     height: 40px;
-    padding: 0 40px;
+    padding-left: 42px;
     outline: none;
 }
-.save{
+
+#login {
     width: 275px;
     height: 40px;
     background-color: #e10303;
@@ -66,40 +107,100 @@
     border: 0;
     outline: none;
     cursor: pointer;
+    margin-top: 15px;
 }
-.auto{
+
+.auto {
     height: 40px;
     line-height: 40px;
     margin-top: 10px;
     text-align: left;
     border-bottom: 1px dotted #999;
 }
-.auto span{
+
+.auto span {
     font-size: 12px;
     color: #999;
 }
-.reg_a{
+
+.reg_a {
     color: #0066cc;
     margin-left: 10px;
 }
-.footer{
+
+.reg {
+    height: 40px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.reg em {
+    font-size: 12px;
+    line-height: 40px;
+    color: #999;
+}
+
+.reg strong {
+    display: block;
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-left: 10px;
+}
+
+.reg_1 {
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat -152px -34px;
+}
+
+.reg_1:hover {
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat -152px -85px;
+}
+
+.reg_2 {
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat -101px -34px;
+}
+
+.reg_2:hover {
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat -101px -85px;
+}
+
+.reg_3 {
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat -50px -34px;
+}
+
+.reg_3:hover {
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat -50px -85px;
+}
+
+.reg_4 {
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat 1px -34px;
+}
+
+.reg_4:hover {
+    background: url(https://login.jiuxian.com/img/reg/regLogin-8.png) no-repeat 1px -85px;
+}
+
+.footer {
     width: 100%;
     background-color: #f7f7f7;
     margin-top: 20px;
     padding-top: 90px;
 }
-.foot_p{
+
+.foot_p {
     width: 1000px;
     height: 60px;
     margin: 0 auto;
 }
-.foot_p1{
+
+.foot_p1 {
     font-size: 12px;
     line-height: 20px;
     color: #999;
     text-align: center;
 }
-.foot_p2{
+
+.foot_p2 {
     font-size: 12px;
     line-height: 20px;
     color: red;

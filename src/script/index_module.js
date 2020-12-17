@@ -1,4 +1,4 @@
-define([], () => {
+define(['jlazyload'], () => {
     return {
         init: function() {
             //获取元素
@@ -46,13 +46,52 @@ define([], () => {
             }, 3000);
 
 
+
+            //小轮播图
+            //获取一张图片的宽度
+            let $num1 = 0;
+            let $liwidth = $('.u_list li').eq(0).width();
+            $('.u_list').width($liwidth * $('.u_list li').size());
+
+            //console.log($('.ulist').width());
+
+            //激活按钮
+            $('.btn_ol li').on('mouseover', function() {
+                $num1 = $(this).index();
+                $(this).addClass('active').siblings('li').removeClass('active');
+                $('.u_list').stop(true).animate({
+                    left: -$liwidth * $num1
+                });
+            })
+
+            //添加定时器
+            //打开定时器
+            let date = null;
+            date = setInterval(function() {
+                $num1++;
+                //判断索引
+                if ($num1 === $('.btn_ol li').size() + 1) {
+                    console.log($('.btn_ol li').size());
+                    $('.u_list').css('left', 0);
+                    $num1 = 1;
+                }
+                $('.btn_ol li').eq($num1).addClass('active').siblings('li').removeClass('active');
+                $('.u_list').stop(true).animate({
+                    left: -$liwidth * $num1
+                });
+            }, 2000);
+
+
+
             //二级菜单
 
             $item_list.hover(function() {
                 $menu.show();
                 $(this).addClass('active').siblings('li').removeClass('active');
+                $(this).addClass('active').css('background', '#f7f7f7');
                 $menu.eq($(this).index()).show().siblings('.item').hide();
             }, function() {
+                $(this).addClass('active').css('background', '#fff');
                 $menu.hide();
             })
             $menu.hover(function() {
@@ -133,13 +172,17 @@ define([], () => {
                 $.each(data, function(index, value) {
                     $strhtml += `
                 <li>
-                        <img src="${value.url}"/>
-                        <p>${value.title}</p>
+                    <a href="detail.html?sid=${value.sid}">
+                        <img class="lazy" data-original="${value.url}"/>
+                        <a>${value.title}</a>
                         <span>￥${value.price}</span>
+                    </a>
                 </li>
             `;
                 });
-                $('.whitej').html($strhtml);
+                $('.white_right ul').html($strhtml);
+                //懒加载
+                $("img.lazy").lazyload({ effect: "fadeIn" });
             });
         }
     }
